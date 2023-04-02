@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workout</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class = "container">
+    <div class="card">
+        <div class = "row">
+            <div class = "col-sm">
+                <div class="card-header">
+                  Build Your Own Workout
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class = "row">
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for="exercise-type">Exercise Type</label>
+                        <input type="text" class="form-control" id="exercise-type" placeholder="Squats,Lunges,Crunches,etc.">
+                    </div>
+                </div>
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for="duration">Duration In Minutes</label>
+                        <input type="number" class="form-control" id="duration" placeholder="How many minutes?">
+                    </div>
+                </div>
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for="number-of-intervals">Number Of Intervals</label>
+                        <input type="number" class="form-control" id="number-of-intervals" placeholder="Number of Rounds of This Exercise"> 
+                    </div>
+                </div>
+            </div><br>
+            <div class = "col-sm-2">
+                <button id="add" class="btn btn-info form-control">Add To Workout</button>
+            </div>
+        </div>
+    </div><br>
+    <div class = "row">
+        <div class = "col-sm">
+            <table id = "list" class = "table table-info table-striped">
+                <tr>
+                    <th>Exercise Type</th>
+                    <th>Duration in Minutes</th>
+                    <th>Number of Rounds</th>
+                    <th>Total Minutes For Interval</th>
+                    <th>Actions</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+<script src="workout.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>    
+</body>
+</html>
